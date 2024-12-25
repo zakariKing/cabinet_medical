@@ -13,10 +13,11 @@ public class Patient {
     private String email;
     private String telephone;
 
-    @OneToOne(mappedBy = "Patient", cascade = CascadeType.ALL)
+
+    @OneToOne(mappedBy = "patient", cascade = CascadeType.ALL)
     private DossierMedical dossierMedical;
 
-    @OneToMany(mappedBy = "Patient", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
     private List<RendezVous> rendezVousList;
 
     // Getters et setters

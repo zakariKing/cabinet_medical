@@ -11,7 +11,7 @@ public class DossierMedical {
     private String traitementEnCours;
 
     @OneToOne
-    @JoinColumn(name = "Patient_id")
+    @JoinColumn(name = "patient_id") 
     private Patient patient;
 
     // Getters et setters
