@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/output.css" rel="stylesheet">
+    <title th:text="${title}">Cabinet Médical</title>
+</head>
+<body>
+    <h1 class="text-3xl font-bold text-center text-blue-600">Bienvenue au Cabinet Médical</h1>
+    <p class="mt-4 text-center text-gray-700">Gérez vos patients, médecins, rendez-vous et dossiers médicaux facilement.</p>
+    <div class="grid grid-cols-3 gap-4 mt-6 text-center">
+        <a href="/patients" class="bg-green-500 text-white py-4 rounded hover:bg-green-600">Gérer les Patients</a>
+        <a href="/medecins" class="bg-blue-500 text-white py-4 rounded hover:bg-blue-600">Gérer les Médecins</a>
+        <a href="/rendezvous" class="bg-yellow-500 text-white py-4 rounded hover:bg-yellow-600">Gérer les Rendez-vous</a>
+    </div>
+</body>
+</html>
