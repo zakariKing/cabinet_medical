@@ -1,6 +1,6 @@
 package com.cabinetmedical.cabinet_medical.service;
 
-import com.cabinetmedical.cabinet_medical.model.User;
+import com.cabinetmedical.cabinet_medical.model.Anas;
 import com.cabinetmedical.cabinet_medical.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,11 +12,11 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public User saveUser(User user) {
+    public Anas saveUser(Anas user) {
         return userRepository.save(user);
     }
 
-    public List<User> getAllUsers() {
+    public List<Anas> getAllUsers() {
         return userRepository.findAll();
     }
 }

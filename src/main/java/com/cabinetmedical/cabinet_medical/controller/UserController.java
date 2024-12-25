@@ -1,6 +1,6 @@
 package com.cabinetmedical.cabinet_medical.controller;
 
-import com.cabinetmedical.cabinet_medical.model.User;
+import com.cabinetmedical.cabinet_medical.model.Anas;
 import com.cabinetmedical.cabinet_medical.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,12 +21,12 @@ public class UserController {
 
     @GetMapping("/addUser")
     public String showAddUserForm(Model model) {
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new Anas());
         return "addUser";
     }
 
     @PostMapping("/addUser")
-    public String addUser(User user) {
+    public String addUser(Anas user) {
         userService.saveUser(user);
         return "redirect:/";
     }
