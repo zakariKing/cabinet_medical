@@ -1,5 +1,6 @@
 package com.cabinetmedical.cabinet_medical.entities;
 
+
 import jakarta.persistence.*;
 import java.util.List;
 
